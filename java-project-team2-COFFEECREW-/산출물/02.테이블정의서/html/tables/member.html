@@ -1,0 +1,165 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tables</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+<body onload="setTitle()">
+<script type="text/javascript">
+function setTitle(){
+  parent.document.title="member";
+}
+</script>
+
+<h2
+  >
+  member
+      (member)
+  </h2>
+
+
+<table width="100%" border="1" cellpadding="3" cellspacing="0" >
+  <tr class="TableHeadingColor">
+    <th width="1%">No.</th>
+    <th width="14%">Logical Name</th>
+    <th width="14%">Physical Name</th>
+    <th width="10%">Type</th>
+    <th width="3%">Null</th>
+    <th width="3%">Default Value</th>
+    <th width="30%">Description</th>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+              <img src="../images/primarykey.gif">
+            1
+    </td>
+    <td><strong>id</strong></td>
+    <td><strong><code>id</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+            2
+    </td>
+    <td><strong>pw</strong></td>
+    <td><strong><code>pw</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+            3
+    </td>
+    <td><strong>pwcheck</strong></td>
+    <td><strong><code>pwcheck</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+            4
+    </td>
+    <td><strong>phone</strong></td>
+    <td><strong><code>phone</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+            5
+    </td>
+    <td><strong>birthdate</strong></td>
+    <td><strong><code>birthdate</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+            6
+    </td>
+    <td><strong>email</strong></td>
+    <td><strong><code>email</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+    <tr>
+    <td align="right" nowrap>
+            7
+    </td>
+    <td><strong>nickname</strong></td>
+    <td><strong><code>nickname</code></strong></td>
+    <td><code>VARCHAR2(100)</code></td>
+    <td align="center">
+          N
+        </td>
+    <td>&nbsp;</td>
+    <td>
+                  &nbsp;
+        </td>
+  </tr>
+  </table>
+
+
+
+  <br>
+  <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr class="TableHeadingColor">
+      <td><strong>Referenced Tables</strong></td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" cellpadding="3" cellspacing="0">
+    <tr><th>Table</th><th>Column</th></tr>
+                  <tr>
+          <td><code><a href="orders.html">orders.id</a></code></td>
+          <td>
+            <code>id</code><br>
+          </td>
+        </tr>
+                        <tr>
+          <td><code><a href="cart.html">cart.id</a></code></td>
+          <td>
+            <code>id</code><br>
+          </td>
+        </tr>
+            </table>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itwill.shop.mapper.CartMapper">
+	<resultMap type="com.itwill.shop.cart.Cart" id="cartResultMap" autoMapping="true">
+		<id column="c_no" property="cNo"/>
+		<association property="user" javaType="com.itwill.shop.user.User" autoMapping="true">
+			<id column="u_id" property="uId"/>
+		</association>
+		<association property="productOption" javaType="com.itwill.shop.product.ProductOption" autoMapping="true">
+			<id column="po_no" property="poNo"/>
+			<association property="product" javaType="com.itwill.shop.product.Product" autoMapping="true">
+				<id column="p_no" property="pNo"/>
+				<result column="p_name" property="pName"/>
+				<result column="p_count" property="pCount"/>
+				<result column="p_price" property="pPrice"/>
+				<result column="p_img" property="pImg"/>
+				<result column="p_category" property="pCategory"/>
+			</association>
+		</association>	
+	</resultMap>
+
+</mapper>
